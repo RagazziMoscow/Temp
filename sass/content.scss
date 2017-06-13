@@ -1,0 +1,98 @@
+.content {
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.title {
+  margin-top: 34px;
+  margin-bottom: 42px;
+  color: #184771;
+  text-align: center;
+
+
+  &__main {
+    margin: 0 auto;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  &__subtitle {
+    font-family: 'Myriad Pro', Arial, sans-serif;
+    font-size: 24px;
+    line-height: 35px;
+  }
+}
+
+.benefits {
+  width: 100%;
+  margin-top: 42px;
+  padding-bottom: 27px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-family: Roboto, Arial, sans-serif;
+  text-align: center;
+  border-bottom: 2px solid #cfdde5;
+
+  &__item {
+    width: 190px;
+    height: 280px;
+    border-radius: 2px;
+    border: 1px solid #dfdfdf;
+    overflow: hidden;
+
+    &__title {
+      height: 90px;
+      width: 100%;
+      display: flex;
+      align-items:center;
+      font-size: 24px;
+      font-weight: bold;
+      color: #3c6e9a;
+      word-spacing: 50px;
+      border-bottom: 1px solid #dfdfdf;
+      background: transparent linear-gradient(to bottom, rgb(255, 255, 255), #f3f3f3);
+
+    }
+    &__content {
+      display: block;
+      height: 110px;
+    }
+    &__more {
+      height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #ebf2f7;
+    }
+  }
+}
+
+.more {
+  padding: 10px 20px;
+  background-color: #659acc;
+  border-radius: 4px;
+  font-family: Myriad Pro, sans-serif;
+  font-size: 17px;
+  color: white;
+  border-bottom: 2px solid #2b608f;
+}
+
+.desc {
+  padding: 30px;
+  background-color: #f3f7f9;
+  font-family: Roboto, Arial, sans-serif;
+  &__title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #17466f;
+    text-align: center;
+    margin-top: 16px;
+  }
+  &__content {
+    color: #345e81;
+    text-align: center;
+    font-size: 19;
+  }
+}

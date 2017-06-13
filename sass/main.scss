@@ -1,0 +1,18 @@
+@import './../bower_components/normalize.sass/_normalize.sass';
+
+
+html {
+  height: 100%;
+}
+
+body {
+
+  background: linear-gradient(to bottom, #184872, #184975);
+  position: relative;
+}
+
+@import 'lighting';
+@import 'wrapper';
+@import 'header';
+@import 'content';
+@import 'footer';

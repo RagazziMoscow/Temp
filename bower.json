@@ -1,0 +1,16 @@
+{
+  "name": "project",
+  "authors": [
+    "Ilya <iliya5376@mail.com>"
+  ],
+  "description": "no",
+  "main": "index.html",
+  "keywords": [
+    "no"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "normalize.sass": "^3.0.0"
+  }
+}
