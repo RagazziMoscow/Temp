@@ -37,8 +37,43 @@
       & a {
         text-decoration: none;
         color: #5482ab;
+        &:hover {
+          color: #59a9da;
+        }
 
       }
+    }
+  }
+}
+
+@media (max-width: 1140px) {
+  .bottom-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 510px) {
+  .copyright {
+    &__text {
+      display: inline-block;
+    }
+    &__contact {
+      display: inline-block;
+      margin-top: 20px;
+      padding-left: 30px;
+      background-position: 0 0;
+    }
+  }
+}
+
+@media (max-width: 470px) {
+  .footer {
+    padding: 10px;
+    height: 70px;
+  }
+  .copyright {
+    &__text {
+      font-size: 10px;
     }
   }
 }

@@ -4,6 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+  <script>
+      $(document).ready(function(){
+        var touch = $('#touch-menu');
+        var menu = $('.menu');
+     
+        $(touch).on('click', function(e) {
+            e.preventDefault();
+            menu.slideToggle();
+        });
+        $(window).resize(function(){
+            var wid = $(window).width();
+            if(wid > 760 && menu.is(':hidden')) {
+                menu.removeAttr('style');
+            }
+        });
+    });
+  </script>
   <title>Главная страница</title>
 </head>
 <body>
@@ -24,6 +42,11 @@
           <li class="menu__item"><a href="#">Contact Us</a></li>
         </ul>
       </nav>
+      <div href="#" id="touch-menu">
+        <span class="divide"></span>
+        <span class="divide"></span>
+        <span class="divide"></span>
+      </div>
     </div>
     <div class="content">
       <div class="title">

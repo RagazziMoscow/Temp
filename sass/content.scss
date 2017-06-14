@@ -3,6 +3,11 @@
   background-color: #fff;
   border-radius: 5px;
 }
+@media (max-width: 1140px) {
+  .content{
+    border-radius: 0;
+  }
+}
 
 .title {
   margin-top: 34px;
@@ -26,10 +31,11 @@
 
 .benefits {
   width: 100%;
+  margin: 0 auto;
   margin-top: 42px;
   padding-bottom: 27px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   font-family: Roboto, Arial, sans-serif;
   text-align: center;
@@ -38,9 +44,16 @@
   &__item {
     width: 190px;
     height: 280px;
+    margin: 10px 0;
     border-radius: 2px;
     border: 1px solid #dfdfdf;
     overflow: hidden;
+    /*
+    &:last-child, &:first-child {
+      margin-left: 0;
+      margin-right: 0;
+    }
+*/
 
     &__title {
       height: 90px;
@@ -94,5 +107,64 @@
     color: #345e81;
     text-align: center;
     font-size: 19;
+  }
+}
+@media (max-width: 770px) {
+  .title {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 650px) {
+  .title {
+    &__main {
+      font-size: 25px;
+    }
+    &__subtitle {
+      font-size: 20px;
+    }
+  }
+  .desc {
+    &__title {
+      font-size: 35px;
+    }
+    &__content {
+      font-size: 20px;     
+    }
+  }
+}
+
+@media (max-width: 470px){
+  .content {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 380px) {
+  .title {
+    &__main {
+      font-size: 25px;
+      line-height: 30px  
+    }
+    &__subtitle {
+      font-size: 15px;
+      line-height: 19px
+    }
+  }
+  .desc {
+    padding: 10px;
+    &__title {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 25px;
+      line-height: 3-px;
+    }
+    &__content {
+      font-size: 12px;    
+      line-height: 17px;
+    }
+  }
+    .benefits {
+    margin-top: 0;
   }
 }
